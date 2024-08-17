@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2srdhcop18c8"]
+
+[ext_resource type="PackedScene" uid="uid://dwj67uih4nxda" path="res://Scene/player.tscn" id="1_g7y6j"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_lw4q5"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0vor4"]
+
+[node name="World" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("WorldBoundaryShape3D_lw4q5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("PlaneMesh_0vor4")
+
+[node name="Player" parent="." instance=ExtResource("1_g7y6j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
