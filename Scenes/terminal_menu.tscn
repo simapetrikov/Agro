@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0dhgqx5qv3f7"]
+
+[ext_resource type="Script" path="res://Scripts/terminal_menu_script.gd" id="1_2r0y4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_stjh0"]
+font_color = Color(0, 0, 0, 1)
+
+[node name="TerminalMenu" type="Node2D"]
+scale = Vector2(6.44, 6.4)
+script = ExtResource("1_2r0y4")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 3.72671
+offset_top = 15.0
+offset_right = 124.727
+offset_bottom = 38.0
+scale = Vector2(0.248277, 0.353924)
+text = "Terminal_menu"
+label_settings = SubResource("LabelSettings_stjh0")

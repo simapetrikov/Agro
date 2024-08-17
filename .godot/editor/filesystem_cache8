@@ -1,0 +1,14 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1723918982
+icon.svg::CompressedTexture2D::2740290763804396138::1723871282::1723911775::1::::<><>::
+::res://Scene/::1723919038
+player.tscn::PackedScene::8723936446266048218::1723918996::0::1::::<><>::res://Scripts/player_script.gd<>res://Shaders/cube.gdshader
+terminal.tscn::PackedScene::7375368731474363941::1723919100::0::1::::<><>::res://Scripts/terminal_script.gd<>uid://b0dhgqx5qv3f7::::res://Scene/terminal_menu.tscn
+terminal_menu.tscn::PackedScene::4147771518908290530::1723918996::0::1::::<><>::res://Scripts/terminal_menu_script.gd
+world.tscn::PackedScene::4319716179162056937::1723919100::0::1::::<><>::uid://dwj67uih4nxda::::res://Scene/player.tscn<>uid://ddcxil0jbtkwj::::res://Scene/terminal.tscn
+::res://Scripts/::1723918738
+player_script.gd::GDScript::-1::1723918738::0::1::::<>CharacterBody3D<>::
+terminal_menu_script.gd::GDScript::-1::1723918597::0::1::::<>Node2D<>::
+terminal_script.gd::GDScript::-1::1723918724::0::1::::<>StaticBody3D<>::
+::res://Shaders/::1723907237
+cube.gdshader::Shader::-1::1723907237::0::1::::<><>::

@@ -1,0 +1,4 @@
+ColorRect
+Label
+CollisionShape3D
+ShapeCast3D
