@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://b2srdhcop18c8"]
+
+[ext_resource type="PackedScene" uid="uid://ddcxil0jbtkwj" path="res://Scene/terminal.tscn" id="1_y0skj"]
+[ext_resource type="PackedScene" uid="uid://betg7fercicu5" path="res://Models/corn.blend" id="3_05nnl"]
+[ext_resource type="PackedScene" uid="uid://dwj67uih4nxda" path="res://Scene/player.tscn" id="3_jgqbf"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_lw4q5"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0vor4"]
+
+[node name="World" type="Node3D"]
+
+[node name="Terminal" parent="." instance=ExtResource("1_y0skj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.53036, -4.30331)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("WorldBoundaryShape3D_lw4q5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(8.74432, 0, 0, 0, 1, 0, 0, 0, 6.50906, 0, 0, 0)
+mesh = SubResource("PlaneMesh_0vor4")
+
+[node name="Player" parent="." instance=ExtResource("3_jgqbf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.171981, 3.72238, -4.06029)
+omni_range = 4.06546
+
+[node name="corn" parent="." instance=ExtResource("3_05nnl")]
