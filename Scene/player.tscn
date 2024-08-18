@@ -48,4 +48,5 @@ debug_shape_custom_color = Color(0.963508, 0.851251, 0.868901, 1)
 
 [node name="Shader" type="MeshInstance3D" parent="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+visible = false
 mesh = SubResource("BoxMesh_22j0s")
